@@ -11,7 +11,7 @@ def parse_input() -> Tuple[List[Tuple[int, int]], List[List[int]]]:
             A tuple where the first element is a list of rules as (X, Y) pairs and
             the second element is a list of updates (lists of page numbers).
     """
-    with open("my_input.txt", "r") as file:
+    with open("test_input.txt", "r") as file:
         content = file.read()
     sections = content.strip().split("\n\n")
     rules = [tuple(map(int, line.split('|'))) for line in sections[0].splitlines()]
