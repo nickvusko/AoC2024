@@ -7,7 +7,7 @@ def day3_1() -> int:
 
     :returns: result as a number.
     """
-    with open("my_input.txt", "r") as file:
+    with open("test_input.txt", "r") as file:
         content = file.read()
     matches = re.findall(r"mul\((\d+),(\d+)\)", content)
     return sum(int(x) * int(y) for x, y in matches)
@@ -22,7 +22,7 @@ def day3_2() -> int:
 
     :returns: result as a number.
     """
-    with open("my_input.txt", "r") as file:
+    with open("my_input.txt.txt", "r") as file:
         content = file.read()
     mul_pattern = r"mul\((\d+),(\d+)\)"
     do_pattern = r"do\(\)"
